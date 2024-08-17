@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+  background:white;
+  background-size: cover;
+  background-position: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+
+
+/* navbar */
+.navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 30px;
+  }
+.navbar-brand:hover{
+    color: #000;
+}
+#min {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+#min:hover {
+    background-color: darkgray;
+  }
+  #fun{
+    color: #000;
+  }
+  #fun:hover{
+    background-color: darkgray;
+  }
+  .top {
+    border-color: transparent;
+    background-color: transparent;
+    transition: ease-in-out 1s;
+  }
+  .not-top {
+    position: sticky;
+    top: 0;
+    border-color: #fff;
+    background-color: #fff;
+    z-index: 99;
+    animation: navbar 0.5s ease-in-out;
+    transition: ease-in-out 1s;
+  }
+  @media only screen and (min-width: 900px) {
+    .demo-text .demo-content{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 70px;
+    }
+    .demo-text .demo-content img {
+      width: 100%;
+    }
+  }
+  @keyframes navbar {
+    from {
+      transform: translateY(-100px);
+    }
+  
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+/* end of navbar  */
+
+
+
+/* first page  */
+
+  .site-header {
+    background-color: var(--section-bg-color);
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+    display: flex;
+    background-color: #363947;
+    height: 400px;
+  }
+  #rot {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  #fot {
+    color: rgb(38, 82, 148);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .site-header.section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .site-header.site-header.section-padding img{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  #pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  
+  }
+  .header-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 2px;
+    margin-top: 4px;
+  }
+
+/* end of first page  */
+
+
+
+/* second page  */
+
+  .team {
+    background-color: darkgray;
+    display: flex;
+  }
+  #kot{
+    padding-top:100px;
+    padding: 100px;
+  }
+  #got {
+    padding-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .team-thumb {
+    background-color: whitesmoke;
+    position: relative;
+    padding: 42px 32px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .team-info {
+    width: 100%;
+  }
+  .custom-modal-btn {
+    background-color: darkgray;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 32px;
+    width: 42px;
+    height: 42px;
+  }
+  .modal-body {
+    padding: 4rem;
+  }
+  .modal-header {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+  .modal-header .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    margin:32px;
+  }
+  #cart-modal .modal-header {
+    border-bottom: 0;
+    padding: 0;
+  }
+  #cart-modal .modal-footer {
+    padding: 2rem 4rem;
+  }
+
+/* end of second page  */
+  
+  
+
+
+
+/* testimonial  */
+
+.testimonial {
+    margin: 0;
+    padding: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #363947;
+}
+.card-list .card-item {
+    color: #fff;
+    width: 600px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    text-align: justify;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgwhba(236, 229, 229, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+.slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+.slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.3s ease;
+}
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+/* end of testimonial  */
+
+
+
+/* site footer  */
+
+.site-footer {
+  background-color: #080e29;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-item {
+  display: inline-flex;
+  width: 50%;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+.giy {
+  color: #e0edee;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.giy:hover {
+  color: #e0edee;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.footer-menu-link {
+  color: #e0edee;
+  font-weight: lighter;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.site-footer .social-icon-link {
+  margin-top: 4px;
+}
+
+.site-footer .social-icon-link:hover,
+.footer-menu-link:hover {
+  color: #e0edee;
+}
+
+.copyright-text {
+  font-size: medium;
+}
+
+
+/* social icon */
+
+.social-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-icon-link {
+  color: #e0edee;
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 4px;
+  margin-right: 15px;
+}
+
+.social-icon-link:hover {
+  color: #fff;
+  scale: 1.1;
+}
+
+/* custom circle image  */
+.custom-circle-image {
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+}
+
+.custom-circle-image.team-image {
+  width: 85px;
+  height: 85px;
+}
+
+/* end of site footer  */
+  
